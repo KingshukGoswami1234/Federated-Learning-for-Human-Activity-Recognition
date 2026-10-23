@@ -219,35 +219,42 @@ substitute for the held-out test set.
 - Round-wise visualizations.
 - Comparison of FedAvg, FedProx, ProtoFed, FedProto, and MOON.
 
+
 ## Repository Structure
 
 ```text
-FL_code_github/
-├── dataset_creation.py
-├── tilt_dataset.py
-├── fl_fedavg.py
-├── fl_fedprox_fedavg.py
-├── fl_protofed.py
-├── fl_fedproto.py
-├── fl_moon.py
-├── FL_PPT.pdf
-├── FL_PPT_2.pdf
-├── FL_PPT_3_Expirement.pdf
-├── tilt_fl_train.csv
-├── tilt_fl_validation.csv
-├── tilt_fl_test.csv
-├── reports_fedavg/
-├── reports_fedprox_fedavg/
-├── reports_protofed/
-├── reports_fedproto/
-├── reports_moon/
-├── visualizations_fedavg/
-├── visualizations_fedprox_fedavg/
-├── visualizations_fedproto/
-├── visualizations_protofed/
-├── visualizations_moon/
-└── README.md
+Federated-Learning-for-Human-Activity-Recognition/
+├── src/                               # Source code
+│   ├── dataset_creation.py            # Dataset preparation
+│   ├── tilt_dataset.py                # Tilt feature processing
+│   ├── fl_fedavg.py                   # FedAvg implementation
+│   ├── fl_fedprox_fedavg.py           # FedProx + FedAvg
+│   ├── fl_fedproto.py                 # FedProto implementation
+│   ├── fl_protofed.py                 # ProtoFed implementation
+│   └── fl_moon.py                     # MOON implementation
+│
+├── results/                           # Experimental results
+│   ├── reports_fedavg/                # FedAvg reports
+│   ├── reports_fedproto/              # FedProto reports
+│   ├── reports_fedprox_fedavg/        # FedProx + FedAvg reports
+│   ├── reports_moon/                  # MOON reports
+│   ├── reports_protofed/              # ProtoFed reports
+│   ├── visualizations_fedavg/         # FedAvg plots
+│   ├── visualizations_fedproto/       # FedProto plots
+│   ├── visualizations_fedprox_fedavg/ # FedProx + FedAvg plots
+│   ├── visualizations_moon/           # MOON plots
+│   └── visualizations_protofed/       # ProtoFed plots
+│
+├── presentations/                     # Research presentations
+│   ├── FL_PPT.pdf
+│   ├── FL_PPT_2.pdf
+│   └── FL_PPT_3_Expirement.pdf
+│
+├── README.md                          # Project documentation
+├── LICENSE                            # Project license
+└── .gitignore                         # Git exclusion rules
 ```
+
 
 The repository also contains report spreadsheets and round-wise
 visualization outputs for the implemented methods.
