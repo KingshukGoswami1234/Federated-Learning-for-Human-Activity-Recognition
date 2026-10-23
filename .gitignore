@@ -1,0 +1,8 @@
+﻿.venv/
+venv/
+__pycache__/
+*.py[cod]
+.env
+tilt_fl_train.csv
+tilt_fl_validation.csv
+tilt_fl_test.csv
