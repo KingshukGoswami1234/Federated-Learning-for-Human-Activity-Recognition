@@ -1,3 +1,8 @@
+
+# Dataset files: keep local, never upload
+data/
+*.csv
+
 # Python environments
 .venv/
 venv/
@@ -7,10 +12,10 @@ env/
 __pycache__/
 *.py[cod]
 
-# Secrets
+# Environment variables and secrets
 .env
+.env.*
 
-# Large generated datasets (kept locally, not uploaded to Git)
-tilt_fl_train.csv
-tilt_fl_validation.csv
-tilt_fl_test.csv
+# Generated system files
+.DS_Store
+Thumbs.db
